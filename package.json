@@ -1,0 +1,25 @@
+{
+  "name": "deepseek-cli",
+  "version": "0.1.0",
+  "description": "Deepseek CLI tool",
+  "bin": {
+    "deepseek": "bin/deepseek.js"
+  },
+  "type": "commonjs",
+  "scripts": {
+    "test": "node scripts/test.js",
+    "build": "echo \"No build step\"",
+    "build:web": "cd web && npm run build",
+    "pack": "npm run build:web && npm pack --silent"
+  },
+  "files": [
+    "bin",
+    "web/dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT"
+}
